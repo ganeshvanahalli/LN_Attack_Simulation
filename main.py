@@ -103,7 +103,7 @@ malicious_transactions = threading.Thread(
     args = (Attacker_V1, routers,)
 )
 honest_transactions.start()
-# malicious_transactions.start()
+malicious_transactions.start()
 
 def update(frame):
     line.set_data(x_data, y_data)
