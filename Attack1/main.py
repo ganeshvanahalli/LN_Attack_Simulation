@@ -52,7 +52,7 @@ def run_honest_node(
             end=None, 
             routers=None
         ):
-    time.sleep(5)
+    # time.sleep(5)
     global total_transactions, successfull_transactions
     direction = 1
     while True:
@@ -80,6 +80,7 @@ def run_attacker_node(
             node=None, 
             routers=None
         ):
+    time.sleep(5)
     route = [node] + routers + [routers[0]] + [node]
     while True:
         val = 1000
